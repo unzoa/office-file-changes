@@ -35,3 +35,10 @@
   ```bash
   python src/word-2-pdf/word2pdf.py
   ```
+
+## 合并金数据excel
+
+  > 源文件夹：金数据-提取和合并，目标文件夹：/
+  ```bash
+  node src/merge_excel.py
+  ```

@@ -18,6 +18,8 @@ Thumbs.db
 /pdfs/
 /processed/
 /output/
+/金数据-提取和合并/
+合并后的文件.xlsx
 
 # 本地环境配置
 .env
