@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 // 源文件夹和目标文件夹
-const sourceDir = './A';
-const targetDir = './B';
+const sourceDir = './pdfs';
+const targetDir = './pdfs-rename';
 
 // 确保目标文件夹存在
 if (!fs.existsSync(targetDir)) {
@@ -25,8 +25,10 @@ fs.readdir(sourceDir, (err, files) => {
         const ext = path.extname(file);
         const nameWithoutExt = path.basename(file, ext);
 
+        // TODO 处理文件名
         // 移除从"-备战"开始到末尾的所有文字
-        const newNameWithoutExt = nameWithoutExt.split('-备战')[0];
+        // const newNameWithoutExt = nameWithoutExt.split('-备战')[0];
+        const newNameWithoutExt = nameWithoutExt.replace('精品解析：', '')
 
         // 组合新文件名（加回扩展名）
         const newFileName = newNameWithoutExt + ext;

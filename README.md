@@ -21,7 +21,7 @@
   > 源文件夹：docs，目标文件夹：docs
 
   ```bash
-  python src/remove_header.py
+  python3 src/word-remove-header/remove_headers.py
   ```
 
 ## Word转PDF
@@ -33,7 +33,7 @@
   > 使用了命令行版本 libreoffice，**很慢**
 
   ```bash
-  python src/word-2-pdf/word2pdf.py
+  python3 src/word-2-pdf/word2pdf.py
   ```
 
 ## 合并金数据excel
